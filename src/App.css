@@ -10422,7 +10422,9 @@ height: 55px;
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-
+.home-gallery-section a{
+  height: 400px;
+}
 .ftco-section-parallax {
   position: relative;
 }

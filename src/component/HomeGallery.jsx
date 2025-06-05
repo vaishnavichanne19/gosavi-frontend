@@ -18,7 +18,7 @@ const HomeGallery = () => {
         <div className="row no-gutters">
         {GalleryUser.map((user) => {
               return (
-          <div className="col-md-3">
+          <div className="col-md-3 home-gallery-section">
             <a
               href="#"
               className="gallery img d-flex align-items-center"
