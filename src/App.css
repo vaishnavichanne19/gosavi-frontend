@@ -10522,6 +10522,7 @@ height: 55px;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background-position: top !important;
 }
 .staff .text .ftco-social {
   padding: 0;

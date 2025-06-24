@@ -12,7 +12,6 @@ const Contact = () => {
     message: "",
   });
 
-
   const inputHandler = (e) => {
     const { name, value } = e.target;
     setContactForm((prev) => ({ ...prev, [name]: value }));
@@ -41,8 +40,6 @@ const Contact = () => {
     }
   };
 
-
-
   // contact top api
   useEffect(() => {
     const fetchData = async () => {
@@ -57,13 +54,14 @@ const Contact = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("https://admin.gosaviadvanceddentalclinic.com/api/getContact");
+      const response = await axios.get(
+        "https://admin.gosaviadvanceddentalclinic.com/api/getContact"
+      );
       setContactUser(response.data);
     };
 
     fetchData();
   }, []);
-
 
   return (
     <div>
@@ -101,22 +99,24 @@ const Contact = () => {
       <section className="ftco-section contact-section ftco-degree-bg">
         <div className="container">
           <div className="row d-flex mb-5 contact-info">
-          {ContactTopUser.map((user) => {
-            return (
-            <div className="col-md-12 mb-4">
-              <h2 className="h4">{user.heading}</h2>
-            </div>
-            )})}
+            {ContactTopUser.map((user) => {
+              return (
+                <div className="col-md-12 mb-4">
+                  <h2 className="h4">{user.heading}</h2>
+                </div>
+              );
+            })}
             <div className="w-100" />
             {ContactUser.map((user) => {
-            return (
-            <div className="col-md-4">
-              <p>
-                <span>{user.heading}:</span> 
-                {user.para}
-              </p>
-            </div>
-            )})}
+              return (
+                <div className="col-md-4">
+                  <p>
+                    <span>{user.heading}:</span>
+                    {user.para}
+                  </p>
+                </div>
+              );
+            })}
             {/* <div className="col-md-3">
               <p>
                 <span>Phone:</span>{" "}
@@ -192,7 +192,7 @@ const Contact = () => {
             </div>
             <div className="col-md-6" id="map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3170.159317866573!2d-122.08642602527956!3d37.38606440337316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%09203%20Fake%20St.%20Mountain%20View%2C%20San%20Francisco%2C%20California%2C%20USA!5e0!3m2!1sen!2sin!4v1743252250030!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.647930961331!2d79.08614777430779!3d21.08671938578714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf3d3689383f%3A0xa0d9af44f43900c1!2sGosavi's%20Advanced%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1750744622851!5m2!1sen!2sin"
                 width={600}
                 height={450}
                 style={{ border: 0 }}
@@ -203,7 +203,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <ToastContainer/>
+        <ToastContainer />
       </section>
     </div>
   );
