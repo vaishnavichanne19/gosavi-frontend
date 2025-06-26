@@ -164,11 +164,11 @@ const Footer = () => {
                 <ul>
                 {ContactUser.map((user) => {
             return (
-                  <li>
-                    <span className="icon">
+                  <li className="row">
+                    <span className="col-lg-6 col-md-6 col-sm-12 icon">
                     {user.heading}:
                     </span>
-                    <span className="text">
+                    <span className="col-lg-6 col-md-6 col-sm-12 text">
                       {user.para}
                     </span>
                   </li>

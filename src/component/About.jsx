@@ -22,7 +22,7 @@ const About = () => {
       <section className="home-slider">
         <div
           className="slider-item bread-item"
-          style={{ backgroundImage: 'url("images/col-2.jpeg")' }}
+          style={{ backgroundImage: 'url("images/banner3.png")' }}
           data-stellar-background-ratio="0.5"
         >
           <div className="overlay" />

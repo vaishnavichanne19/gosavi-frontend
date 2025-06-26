@@ -33,7 +33,7 @@ const Service = () => {
       <section className="home-slider owl-carousel">
         <div
           className="slider-item bread-item"
-          style={{ backgroundImage: 'url("images/col-2.jpeg")' }}
+          style={{ backgroundImage: 'url("images/banner3.jpg")' }}
           data-stellar-background-ratio="0.5"
         >
           <div className="overlay" />
