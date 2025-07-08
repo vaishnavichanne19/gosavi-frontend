@@ -17,7 +17,7 @@ const Newsletter = () => {
 
   return (
     <section className="ftco-section-parallax">
-    <div className="parallax-img d-flex align-items-center">
+    <div className="parallax-img d-flex align-items-center mb-8">
       <div className="container">
         <div className="row d-flex justify-content-center">
         {NewsUser.map((user) => {

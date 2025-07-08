@@ -20,9 +20,9 @@ function Home () {
 <Dentacare/>
 <HomeMeet/>
 <Achievement/>
-<Price/>
-<Newsletter/>
+{/* <Price/> */}
 <Testimony/>
+<Newsletter/>
 <HomeGallery/>
 <Blog/>
 <Quote/>
