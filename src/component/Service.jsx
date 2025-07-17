@@ -194,7 +194,6 @@ const Service = () => {
         </div>
       </section>
       <Achievement />
-      <Price />
     </div>
   );
 };
