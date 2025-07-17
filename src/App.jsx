@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './component/Header'
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom"
+import {HashRouter, Route, BrowserRouter as Router, Routes} from "react-router-dom"
 import Home from './component/Home'
 import Footer from './component/Footer';
 import Appointment from './component/Appointment';
@@ -13,7 +13,7 @@ function App() {
 
   return (
    <div>
-    <Router>
+    <HashRouter>
     <Header/>
     <Routes>
       <Route exact path="/" element={<Home/>} />
@@ -24,7 +24,7 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
     </Routes> 
     <Footer/>
-    </Router>
+    </HashRouter>
    </div>
   )
 }
